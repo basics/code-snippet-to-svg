@@ -14,17 +14,17 @@ function getMinMax(value = '1') {
   return value.split('-');
 }
 
-function getCodeAsSVG(path, range = '1') {
+function getCodeAsSVG(path, range = '1', lang = null) {
   const url = githubRawUrl + path;
   return request({ uri: url }).then((code) => {
     const [min, max] = getMinMax(range);
-    return codeToSVG(code, min, max);
+    return codeToSVG(code, min, max, lang);
   });
 }
 
 exports.test = functions.https.onRequest((req, res) => {
   const path = '/GrabarzUndPartner/gp-vue-boilerplate/master/src/components/molecules/LinkList.vue';
-  getCodeAsSVG(path, req.query.L).then((svg) => {
+  getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
     res.setHeader('Content-Type', 'image/svg+xml');
     res.setHeader('Cache-Control', 'no-cache');
     res.send(Buffer.from(svg));
@@ -33,7 +33,7 @@ exports.test = functions.https.onRequest((req, res) => {
 
 app.get(['/:foo/:bar/*'], (req, res) => {
   const path = req.path.replace(/([\w-]*\/[\w-]*)(\/blob)/, '$1');
-  getCodeAsSVG(path, req.query.L).then((svg) => {
+  getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
     res.setHeader('Content-Type', 'image/svg+xml');
     res.setHeader('Cache-Control', 'no-cache');
     res.send(Buffer.from(svg));

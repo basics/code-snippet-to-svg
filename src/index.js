@@ -8,9 +8,18 @@ function extract(content, min = 1, max) {
     .join('\n');
 }
 
-function codeToSVG(code, min, max) {
+function highlightCode(code, lang) {
+  console.log(lang);
+  if (lang) {
+    return emphasize.highlight(lang, code);
+  }
+  return emphasize.highlightAuto(code);
+}
+
+function codeToSVG(code, min, max, lang) {
   const extractedCode = extract(code, min, max);
-  const highlightedCode = emphasize.highlightAuto(extractedCode);
+
+  const highlightedCode = highlightCode(extractedCode, lang);
   return ansiToSVG(highlightedCode.value);
 }
 
