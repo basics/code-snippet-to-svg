@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/basics/code-snippet-to-svg/compare/v1.2.0...v1.2.1) (2018-08-19)
+
+
+### Bug Fixes
+
+* **functions:** enable cache ([47f84ef](https://github.com/basics/code-snippet-to-svg/commit/47f84ef))
+* **package:** updated version number of own package in functions ([16ed379](https://github.com/basics/code-snippet-to-svg/commit/16ed379))
+
 # [1.2.0](https://github.com/basics/code-snippet-to-svg/compare/v1.1.0...v1.2.0) (2018-08-19)
 
 
