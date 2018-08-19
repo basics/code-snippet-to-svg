@@ -2,8 +2,8 @@
 [![license](https://img.shields.io/github/license/basics/code-snippet-to-svg.svg)](https://github.com/basics/code-snippet-to-svg)
 
 [![OSX/Linux Build Status](https://travis-ci.org/basics/code-snippet-to-svg.svg?branch=master)](https://travis-ci.org/basics/code-snippet-to-svg)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/7v3b1mv72vll3fd8?svg=true)](https://ci.appveyor.com/project/StephanGerbeth/blueprint-npm-module)
-[![NSP Status](https://nodesecurity.io/orgs/basics/projects/4c593704-b3ef-4475-95ce-5e3bfeaf3261/badge)](https://nodesecurity.io/orgs/basics/projects/4c593704-b3ef-4475-95ce-5e3bfeaf3261)
+[![Build status](https://ci.appveyor.com/api/projects/status/jrxx8092yxd8d07b?svg=true)](https://ci.appveyor.com/project/StephanGerbeth/code-snippet-to-svg)
+[![NSP Status](https://nodesecurity.io/orgs/basics/projects/d5bb0c4d-6232-4370-9886-571c516cd985/badge)](https://nodesecurity.io/orgs/basics/projects/d5bb0c4d-6232-4370-9886-571c516cd985)
 [![Dependencies Status](https://david-dm.org/basics/code-snippet-to-svg/status.svg)](https://david-dm.org/basics/code-snippet-to-svg)
 [![DevDependencies Status](https://david-dm.org/basics/code-snippet-to-svg/dev-status.svg)](https://david-dm.org/basics/code-snippet-to-svg?type=dev)
 
