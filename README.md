@@ -11,3 +11,5 @@
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts") [![Greenkeeper badge](https://badges.greenkeeper.io/basics/code-snippet-to-svg.svg)](https://greenkeeper.io/)
 
 # Code snippet to SVG converter
+
+[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/GrabarzUndPartner/gp-vue-boilerplate/blob/master/src/components/molecules/LinkList.vue?range=1-33)](https://github.com/GrabarzUndPartner/gp-vue-boilerplate/blob/master/src/components/molecules/LinkList.vue#L1-L33)
