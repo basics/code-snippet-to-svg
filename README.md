@@ -12,4 +12,4 @@
 
 # Code snippet to SVG converter
 
-[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/GrabarzUndPartner/gp-vue-boilerplate/blob/master/src/components/molecules/LinkList.vue?range=1-33)](https://github.com/GrabarzUndPartner/gp-vue-boilerplate/blob/master/src/components/molecules/LinkList.vue#L1-L33)
+[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/basics/code-snippet-to-svg/blob/master/examples/example.js?range=1-18)](https://github.com/basics/code-snippet-to-svg/blob/master/examples/example.js#L1L18)
