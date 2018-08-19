@@ -1,7 +1,5 @@
 const ansiToSVG = require('ansi-to-svg');
 const emphasize = require('emphasize');
-// const fs = require('fs');
-// const request = require('request');
 
 function extract(content, min = 1, max) {
   return content
@@ -17,17 +15,3 @@ function codeToSVG(code, min, max) {
 }
 
 module.exports = codeToSVG;
-
-// request(
-//   'https://raw.githubusercontent.com/GrabarzUndPartner/gp-vue-boilerplate/master/src/store/index.js',
-//   (error, resp) => {
-//     const result = codeToSVG(resp.body, 3, 7);
-//     fs.writeFile('./test.svg', result, (err) => {
-//       if (err) {
-//         return console.log(err);
-//       }
-
-//       return console.log('The file was saved!');
-//     });
-//   }
-// );
