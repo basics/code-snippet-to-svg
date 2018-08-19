@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/basics/code-snippet-to-svg/compare/v1.0.0...v1.1.0) (2018-08-19)
+
+
+### Features
+
+* **cleanup:** cleaned up code ([f683f6c](https://github.com/basics/code-snippet-to-svg/commit/f683f6c))
+
 # 1.0.0 (2018-08-19)
 
 
