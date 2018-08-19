@@ -26,7 +26,6 @@ exports.test = functions.https.onRequest((req, res) => {
   const path = '/GrabarzUndPartner/gp-vue-boilerplate/master/src/components/molecules/LinkList.vue';
   getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
     res.setHeader('Content-Type', 'image/svg+xml');
-    res.setHeader('Cache-Control', 'no-cache');
     res.send(Buffer.from(svg));
   });
 });
@@ -35,7 +34,6 @@ app.get(['/:foo/:bar/*'], (req, res) => {
   const path = req.path.replace(/([\w-]*\/[\w-]*)(\/blob)/, '$1');
   getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
     res.setHeader('Content-Type', 'image/svg+xml');
-    res.setHeader('Cache-Control', 'no-cache');
     res.send(Buffer.from(svg));
   });
 });
