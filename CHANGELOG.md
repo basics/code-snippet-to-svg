@@ -1,3 +1,11 @@
+## [1.2.3](https://github.com/basics/code-snippet-to-svg/compare/v1.2.2...v1.2.3) (2018-08-20)
+
+
+### Bug Fixes
+
+* **firebase:** auto deploy by travis ([975836d](https://github.com/basics/code-snippet-to-svg/commit/975836d))
+* **firebase:** global install firebase at ci ([0fa68a1](https://github.com/basics/code-snippet-to-svg/commit/0fa68a1))
+
 ## [1.2.2](https://github.com/basics/code-snippet-to-svg/compare/v1.2.1...v1.2.2) (2018-08-20)
 
 
