@@ -8,6 +8,8 @@ cache:
     - "~/.npm"
 notifications:
   email: false
+before_install:
+  - npm i -g firebase-tools
 install:
   - npm install
   - npm install semantic-release @semantic-release/git @semantic-release/changelog --no-save
