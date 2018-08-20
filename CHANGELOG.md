@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/basics/code-snippet-to-svg/compare/v1.2.3...v1.2.4) (2018-08-20)
+
+
+### Bug Fixes
+
+* **firebase:** set install routine in functions folder ([bd5f0ff](https://github.com/basics/code-snippet-to-svg/commit/bd5f0ff))
+
 ## [1.2.3](https://github.com/basics/code-snippet-to-svg/compare/v1.2.2...v1.2.3) (2018-08-20)
 
 
