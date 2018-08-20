@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/basics/code-snippet-to-svg/compare/v1.2.1...v1.2.2) (2018-08-20)
+
+
+### Bug Fixes
+
+* **cleanup:** rearranged code blocks ([41de989](https://github.com/basics/code-snippet-to-svg/commit/41de989))
+* **index:** optimized language detection ([05d0240](https://github.com/basics/code-snippet-to-svg/commit/05d0240))
+
 ## [1.2.1](https://github.com/basics/code-snippet-to-svg/compare/v1.2.0...v1.2.1) (2018-08-19)
 
 
