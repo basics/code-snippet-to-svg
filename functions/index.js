@@ -22,15 +22,7 @@ function getCodeAsSVG(path, range = '1', lang = null) {
   });
 }
 
-exports.test = functions.https.onRequest((req, res) => {
-  const path = '/GrabarzUndPartner/gp-vue-boilerplate/master/src/components/molecules/LinkList.vue';
-  getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
-    res.setHeader('Content-Type', 'image/svg+xml');
-    res.send(Buffer.from(svg));
-  });
-});
-
-app.get(['/:foo/:bar/*'], (req, res) => {
+app.get(['/:account/:repo/*'], (req, res) => {
   const path = req.path.replace(/([\w-]*\/[\w-]*)(\/blob)/, '$1');
   getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
     res.setHeader('Content-Type', 'image/svg+xml');
@@ -39,3 +31,11 @@ app.get(['/:foo/:bar/*'], (req, res) => {
 });
 
 exports.default = functions.https.onRequest(app);
+
+exports.test = functions.https.onRequest((req, res) => {
+  const path = '/GrabarzUndPartner/gp-vue-boilerplate/master/src/components/molecules/LinkList.vue';
+  getCodeAsSVG(path, req.query.range, req.query.lang).then((svg) => {
+    res.setHeader('Content-Type', 'image/svg+xml');
+    res.send(Buffer.from(svg));
+  });
+});
