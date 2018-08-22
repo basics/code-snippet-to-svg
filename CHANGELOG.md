@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/basics/code-snippet-to-svg/compare/v1.3.0...v1.3.1) (2018-08-22)
+
+
+### Bug Fixes
+
+* **theme:** loading files ([be8ddf1](https://github.com/basics/code-snippet-to-svg/commit/be8ddf1))
+
 # [1.3.0](https://github.com/basics/code-snippet-to-svg/compare/v1.2.9...v1.3.0) (2018-08-22)
 
 
