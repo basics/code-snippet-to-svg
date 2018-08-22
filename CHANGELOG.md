@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/basics/code-snippet-to-svg/compare/v1.2.9...v1.3.0) (2018-08-22)
+
+
+### Features
+
+* **theme:** added themeing of svg output ([cccf2f5](https://github.com/basics/code-snippet-to-svg/commit/cccf2f5))
+
 ## [1.2.9](https://github.com/basics/code-snippet-to-svg/compare/v1.2.8...v1.2.9) (2018-08-22)
 
 
