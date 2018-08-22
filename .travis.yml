@@ -19,4 +19,4 @@ script:
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
   - npm install --prefix ./functions
-  - firebase deploy --functions --token=${FIREBASE_TOKEN}"
+  - firebase deploy --functions --token=${FIREBASE_TOKEN}
