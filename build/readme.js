@@ -9,7 +9,7 @@ Promise.all([
   }).then(entries => entries
     .map((entry) => {
       const name = entry.replace(/(\.[\w]+)$/, '');
-      return `[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/${url}?range=1-18&theme=${name})](https://github.com/${url}#L1L18)`;
+      return `[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/${url}?range=1-18&theme=${name}&cachebuster)](https://github.com/${url}#L1L18)`;
     })
     .join('\n')),
   new Promise((resolve, reject) => {
