@@ -1,3 +1,11 @@
+## [1.3.2](https://github.com/basics/code-snippet-to-svg/compare/v1.3.1...v1.3.2) (2018-08-22)
+
+
+### Bug Fixes
+
+* **npm:** added schemes dir to package ([a4d6a77](https://github.com/basics/code-snippet-to-svg/commit/a4d6a77))
+* **readme:** changed description ([6ff63c7](https://github.com/basics/code-snippet-to-svg/commit/6ff63c7))
+
 ## [1.3.1](https://github.com/basics/code-snippet-to-svg/compare/v1.3.0...v1.3.1) (2018-08-22)
 
 
