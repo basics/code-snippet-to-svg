@@ -1,5 +1,6 @@
 const ansiToSVG = require('ansi-to-svg');
 const emphasize = require('emphasize');
+const path = require('path');
 
 function extract(content, min = 1, max) {
   return content
@@ -15,11 +16,11 @@ function highlightCode(code, lang = '') {
   return emphasize.highlightAuto(code);
 }
 
-function codeToSVG(code, min, max, lang, theme = './schemes/3024.night.itermcolors') {
+function codeToSVG(code, min, max, lang, theme = '3024.night') {
   const extractedCode = extract(code, min, max);
   const highlightedCode = highlightCode(extractedCode, lang);
   return ansiToSVG(highlightedCode.value, {
-    colors: theme
+    colors: path.resolve(__dirname, `../schemes/${theme}.itermcolors`)
   });
 }
 
