@@ -1,3 +1,11 @@
+## [1.2.9](https://github.com/basics/code-snippet-to-svg/compare/v1.2.8...v1.2.9) (2018-08-22)
+
+
+### Bug Fixes
+
+* **firebase:** test deploy ([7f14260](https://github.com/basics/code-snippet-to-svg/commit/7f14260))
+* **firebase:** test deploy ([30baed7](https://github.com/basics/code-snippet-to-svg/commit/30baed7))
+
 ## [1.2.8](https://github.com/basics/code-snippet-to-svg/compare/v1.2.7...v1.2.8) (2018-08-22)
 
 
