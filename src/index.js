@@ -15,10 +15,12 @@ function highlightCode(code, lang = '') {
   return emphasize.highlightAuto(code);
 }
 
-function codeToSVG(code, min, max, lang) {
+function codeToSVG(code, min, max, lang, theme = './schemes/3024.night.itermcolors') {
   const extractedCode = extract(code, min, max);
   const highlightedCode = highlightCode(extractedCode, lang);
-  return ansiToSVG(highlightedCode.value);
+  return ansiToSVG(highlightedCode.value, {
+    colors: theme
+  });
 }
 
 module.exports = codeToSVG;
