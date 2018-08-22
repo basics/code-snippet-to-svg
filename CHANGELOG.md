@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/basics/code-snippet-to-svg/compare/v1.3.2...v1.3.3) (2018-08-22)
+
+
+### Bug Fixes
+
+* **readme:** added cache busting param ([867e0ae](https://github.com/basics/code-snippet-to-svg/commit/867e0ae))
+
 ## [1.3.2](https://github.com/basics/code-snippet-to-svg/compare/v1.3.1...v1.3.2) (2018-08-22)
 
 
