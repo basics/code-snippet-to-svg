@@ -8,9 +8,6 @@ cache:
     - "~/.npm"
 notifications:
   email: false
-env:
-  global:
-    - secure: gzOpj6iFcQYpNrcpY+Ug+QFssSMSJ1OpL/EhNogCosf1kAYhgzcAJh+fLLaAB+ft4tk7L4Qt+laoHRLA/dFNh8nEAHJfXBbi7wg6xh4ZySqanYyk/A59iIRZNo2L1hG/j7tq0DMfL5UDyiyRhz/FWXpUJ8IdluJROLye91yvBjEVNQcGsvHz66f6mkS+xuK9PYifrPDuPYcrCWPsGOgGjxbGg+36CUUGfnpzkTOuJVlEIgHpEuMiL54qpiXH04DE/uZwdIiC7On84lCBaTUYadwdZhJER93kZVfxxjEq0honAS9tMndkyktul53FxfoBpM6vuW36NWUNXZbUGNw6i0KsDnDH19LEmrWpNIB+CaUD5asU7QRh9c/G31wM4T6fD6yvYOyoZ5Fl4g8MnnxXAxCBzUM1RFu6SMTzCqrxvLjdqHNemqTE6YA65GrchYQbNPcY8Lq53TzwSMNXuHtwdZnNhnw/fyjgiEMd+nDTyJA1cCQo8BkMhcJNY6b+POmDnOPd/98P53eisunOhMyXQMZjrpHhPGnPh2u8upb8D8duCMNLLZMTTvZ43PVWP9aj0AG5QjoL/+JuP1wbK+jTzWfH2SRCWsmCiP65pKByhPKsALZdNRrRbbHtz5+J3FlStlxk7YnK9W5FLrFfzeaQF4hwbvDpUU3L7GQrp/cgGiU=
 before_install:
   - npm i -g firebase-tools
 install:
@@ -21,4 +18,9 @@ script:
   - npm run build
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
-  - firebase deploy --project=code-snippet-to-svg --only functions
+  - npm install --prefix ./functions
+deploy:
+  provider: firebase
+  token:
+    secure: gzOpj6iFcQYpNrcpY+Ug+QFssSMSJ1OpL/EhNogCosf1kAYhgzcAJh+fLLaAB+ft4tk7L4Qt+laoHRLA/dFNh8nEAHJfXBbi7wg6xh4ZySqanYyk/A59iIRZNo2L1hG/j7tq0DMfL5UDyiyRhz/FWXpUJ8IdluJROLye91yvBjEVNQcGsvHz66f6mkS+xuK9PYifrPDuPYcrCWPsGOgGjxbGg+36CUUGfnpzkTOuJVlEIgHpEuMiL54qpiXH04DE/uZwdIiC7On84lCBaTUYadwdZhJER93kZVfxxjEq0honAS9tMndkyktul53FxfoBpM6vuW36NWUNXZbUGNw6i0KsDnDH19LEmrWpNIB+CaUD5asU7QRh9c/G31wM4T6fD6yvYOyoZ5Fl4g8MnnxXAxCBzUM1RFu6SMTzCqrxvLjdqHNemqTE6YA65GrchYQbNPcY8Lq53TzwSMNXuHtwdZnNhnw/fyjgiEMd+nDTyJA1cCQo8BkMhcJNY6b+POmDnOPd/98P53eisunOhMyXQMZjrpHhPGnPh2u8upb8D8duCMNLLZMTTvZ43PVWP9aj0AG5QjoL/+JuP1wbK+jTzWfH2SRCWsmCiP65pKByhPKsALZdNRrRbbHtz5+J3FlStlxk7YnK9W5FLrFfzeaQF4hwbvDpUU3L7GQrp/cgGiU=
+  project: "code-snippet-to-svg"
