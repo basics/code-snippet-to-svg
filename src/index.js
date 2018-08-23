@@ -2,7 +2,7 @@ const ansiToSVG = require('ansi-to-svg');
 const emphasize = require('emphasize');
 const path = require('path');
 
-function extract(content, min = 1, max) {
+function extract(content, { min = 1, max }) {
   return content
     .split('\n')
     .slice(min - 1, max)
@@ -16,8 +16,8 @@ function highlightCode(code, lang = '') {
   return emphasize.highlightAuto(code);
 }
 
-function codeToSVG(code, min, max, { lang, theme = '3024.night' }) {
-  const extractedCode = extract(code, min, max);
+function codeToSVG(code, range, { lang, theme = '3024.night' }) {
+  const extractedCode = extract(code, range);
   const highlightedCode = highlightCode(extractedCode, lang);
   return ansiToSVG(highlightedCode.value, {
     fontSize: 16,

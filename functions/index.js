@@ -14,11 +14,11 @@ function getMinMax(value = '1') {
   return value.split('-');
 }
 
-function getCodeAsSVG(path, query) {
-  const url = `https://${query.host || githubRawUrl}${path}`;
+function getCodeAsSVG(path, { host = githubRawUrl, range, ...config }) {
+  const url = `https://${host}${path}`;
   return request({ uri: url }).then((code) => {
-    const [min, max] = getMinMax(query.range);
-    return codeToSVG(code, min, max, query);
+    const [min, max] = getMinMax(range);
+    return codeToSVG(code, { min, max }, config);
   });
 }
 
