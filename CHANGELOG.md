@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/basics/code-snippet-to-svg/compare/v1.3.3...v1.4.0) (2018-08-23)
+
+
+### Bug Fixes
+
+* **optimize:** changed parameter transaction ([7f136b0](https://github.com/basics/code-snippet-to-svg/commit/7f136b0))
+
+
+### Features
+
+* **service:** added host parameter for code source url ([8494502](https://github.com/basics/code-snippet-to-svg/commit/8494502))
+
 ## [1.3.3](https://github.com/basics/code-snippet-to-svg/compare/v1.3.2...v1.3.3) (2018-08-22)
 
 
