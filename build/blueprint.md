@@ -11,3 +11,9 @@
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts") [![Greenkeeper badge](https://badges.greenkeeper.io/basics/code-snippet-to-svg.svg)](https://greenkeeper.io/)
 
 # Code snippet to SVG converter
+
+## usage
+
+```text
+https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/[repo-url][?range=1-18[&theme=clrs]]
+```
