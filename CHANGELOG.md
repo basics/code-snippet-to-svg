@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/basics/code-snippet-to-svg/compare/v1.4.0...v1.5.0) (2018-08-23)
+
+
+### Features
+
+* **parameters:** rearranged and grouped parameters by destruct ([0ab77e8](https://github.com/basics/code-snippet-to-svg/commit/0ab77e8))
+
 # [1.4.0](https://github.com/basics/code-snippet-to-svg/compare/v1.3.3...v1.4.0) (2018-08-23)
 
 
