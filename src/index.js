@@ -25,9 +25,9 @@ function highlightCode(code, lang = '') {
 }
 
 function modifySVG(svg) {    
-  return svg.replace(/viewBox=\"([0-9\.]+), ([0-9\.]+), ([0-9\.]+), ([0-9\.]+)\"/, (match, g1, g2, g3, g4) => {
+  return svg.replace(/viewBox="([0-9.]+), ([0-9.]+), ([0-9.]+), ([0-9.]+)"/, (match, g1, g2, g3, g4) => {
     return `height="${g4}" preserveAspectRatio="xMinYMax slice" viewBox="${g1}, ${g2}, 898, ${g4}"`;    
-  }).replace(/(\<rect x=\"0\" y=\"0\" width=\")([0-9\.]+)(\")/, (match, g1, g2, g3) => {
+  }).replace(/(<rect x="0" y="0" width=")([0-9.]+)(")/, (match, g1, g2, g3) => {
     return [g1, 898, g3].join('');
   });  
 }
