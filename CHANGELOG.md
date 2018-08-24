@@ -1,3 +1,12 @@
+## [1.5.1](https://github.com/basics/code-snippet-to-svg/compare/v1.5.0...v1.5.1) (2018-08-24)
+
+
+### Bug Fixes
+
+* **eslint:** auto fix ([26af0a5](https://github.com/basics/code-snippet-to-svg/commit/26af0a5))
+* **regexp:** remove useless-escape ([fd0caa0](https://github.com/basics/code-snippet-to-svg/commit/fd0caa0))
+* **svg:** preserve aspect ratio and do not scale on mobile ([8c0fbae](https://github.com/basics/code-snippet-to-svg/commit/8c0fbae))
+
 # [1.5.0](https://github.com/basics/code-snippet-to-svg/compare/v1.4.0...v1.5.0) (2018-08-23)
 
 
