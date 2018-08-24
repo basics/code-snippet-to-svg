@@ -14,7 +14,7 @@ function renderSchemeList(entries) {
     const name = entry.replace(/(\.[\w]+)$/, '');
     return `
 ### scheme: ${name}
-[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/${url}?range=1-18&theme=${name}&cachebuster)](https://github.com/${url}#L1L18)
+[![code preview](https://us-central1-code-snippet-to-svg.cloudfunctions.net/default/${url}?range=7-18&theme=${name}&cachebuster)](https://github.com/${url}#L7L18)
       `;
   });
 }
