@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/basics/code-snippet-to-svg/compare/v1.5.1...v1.5.2) (2018-09-03)
+
+
+### Bug Fixes
+
+* **travis:** only deploy on master branch ([fcd1b92](https://github.com/basics/code-snippet-to-svg/commit/fcd1b92))
+
 ## [1.5.1](https://github.com/basics/code-snippet-to-svg/compare/v1.5.0...v1.5.1) (2018-08-24)
 
 
