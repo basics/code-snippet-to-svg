@@ -20,6 +20,8 @@ after_success:
   - npm run travis-deploy-once "npm run semantic-release"
   # - npm install --prefix ./functions
   # - firebase deploy --only functions --token "${FIREBASE_TOKEN}"
+before_deploy:
+  - npm install --prefix ./functions
 deploy:
   provider: firebase
   on:
