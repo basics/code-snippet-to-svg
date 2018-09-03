@@ -18,5 +18,11 @@ script:
   - npm run build
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
-  - npm install --prefix ./functions
-  - firebase deploy --only functions --token "${FIREBASE_TOKEN}"
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script:
+      - npm install --prefix ./functions
+      - firebase deploy --only functions --token "${FIREBASE_TOKEN}"
+    on:
+      branch: master
