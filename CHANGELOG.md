@@ -1,3 +1,12 @@
+## [1.5.3](https://github.com/basics/code-snippet-to-svg/compare/v1.5.2...v1.5.3) (2018-09-03)
+
+
+### Bug Fixes
+
+* **travis:** only deploy on master branch ([ce345df](https://github.com/basics/code-snippet-to-svg/commit/ce345df))
+* **travis:** only deploy on master branch ([7cb742b](https://github.com/basics/code-snippet-to-svg/commit/7cb742b))
+* **travis:** only deploy on master branch ([97d1703](https://github.com/basics/code-snippet-to-svg/commit/97d1703))
+
 ## [1.5.2](https://github.com/basics/code-snippet-to-svg/compare/v1.5.1...v1.5.2) (2018-09-03)
 
 
