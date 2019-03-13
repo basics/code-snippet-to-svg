@@ -1,6 +1,6 @@
 {
   "name": "@js-basics/code-snippet-to-svg",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "description": "service to convert syntax highlighted code into svg by url",
   "main": "./lib/index.js",
   "directories": {

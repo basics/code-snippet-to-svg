@@ -1,3 +1,10 @@
+## [1.5.6](https://github.com/basics/code-snippet-to-svg/compare/v1.5.5...v1.5.6) (2019-03-13)
+
+
+### Bug Fixes
+
+* **package:** update firebase-admin to version 6.1.0 ([f0e346c](https://github.com/basics/code-snippet-to-svg/commit/f0e346c))
+
 ## [1.5.5](https://github.com/basics/code-snippet-to-svg/compare/v1.5.4...v1.5.5) (2018-09-03)
 
 
