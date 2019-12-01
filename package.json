@@ -68,7 +68,7 @@
   "dependencies": {
     "ansi-to-svg": "github:StephanGerbeth/ansi-to-svg",
     "emphasize": "^2.0.0",
-    "fast-glob": "^2.2.2",
+    "fast-glob": "^3.1.1",
     "highlight.js": "^9.12.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
